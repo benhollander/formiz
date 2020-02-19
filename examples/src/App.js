@@ -18,7 +18,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <ColorModeProvider>
           <CSSReset />
-          <Stack minH="100vh" m="auto" overflow="hidden" flexDirection={{ base: 'column', lg: 'row' }}>
+          <Stack minH="100vh" m="auto" overflow="hidden" flexDirection={{ base: 'column', lg: 'row' }} dir="ltr">
             <NavBar />
             <Box flex="1" w="100%" position="relative">
               <Route path="/wizard" exact>

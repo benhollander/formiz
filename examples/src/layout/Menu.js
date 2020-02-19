@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Stack, Icon, Link, useColorMode, Flex, Switch,
+  Stack, Icon, useColorMode, Flex, Switch,
 } from '@chakra-ui/core';
 import { MenuItem } from './MenuItem';
 
