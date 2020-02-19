@@ -1405,7 +1405,7 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@indeed/frontend-components-react-transpiled@^12.2.0":
+"@indeed/frontend-components-react-transpiled@^12.2.0", "@indeed/frontend-components-react-transpiled@^12.3.0":
   version "12.3.0"
   resolved "https://npm.corp.indeed.com/repository/npm/@indeed/frontend-components-react-transpiled/-/frontend-components-react-transpiled-12.3.0.tgz#e8c9487272befbf973f97c1471079e6dd0eca865"
   integrity sha512-MydTuT3O3sbmDp8N4lOPrmYmJn3+T1f7M1Nq9PqVFaOoZ9ACis9YmLBjdjklSwSkm61ArbdVIqzYFz1Z2Cwueg==

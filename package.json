@@ -8,6 +8,7 @@
   },
   "scripts": {
     "bs": "lerna bootstrap",
+    "clean": "lerna clean",
     "start": "lerna run start --parallel",
     "test": "lerna run test --parallel --scope @formiz/*",
     "test:dev": "lerna run test:dev --parallel --scope @formiz/*",

@@ -25,30 +25,28 @@ export const Menu = ({ direction }) => {
       </MenuItem>
       <MenuItem
         direction={direction}
-        to="/job-wizard"
+        to="/job-posting"
       >
-        Job Wizard 🧙‍♂️
+        Job Posting 🧙‍♂️
+      </MenuItem>
+
+      <MenuItem
+        direction={direction}
+        to="/billing"
+      >
+        billing
       </MenuItem>
       <MenuItem
         direction={direction}
-        mt="6"
-        as={Link}
-        href="https://formiz-react.com"
-        target="_blank"
-        fontSize="sm"
+        to="/resume"
       >
-        Formiz website
-        <Icon name="external-link" ml="1" mb="1" />
+        resume
       </MenuItem>
       <MenuItem
         direction={direction}
-        as={Link}
-        href="https://github.com/ivan-dalmet/formiz"
-        target="_blank"
-        fontSize="sm"
+        to="/apply-now"
       >
-        GitHub
-        <Icon name="external-link" ml="1" mb="1" />
+        apply-now
       </MenuItem>
       <Flex justifyContent={direction === 'left' ? 'flex-start' : 'flex-end'} px="6" pt="8">
         <Stack isInline align="center" mb="1">

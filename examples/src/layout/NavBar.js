@@ -12,6 +12,8 @@ import {
   useDisclosure,
 } from '@chakra-ui/core';
 import { FaBars } from 'react-icons/fa';
+import IndeedLogo from '@indeed/frontend-components-react-transpiled/dist/esm/IndeedLogo';
+
 import { Menu } from './Menu';
 import { useDarkTheme } from '../hooks/isDarkTheme';
 
@@ -48,12 +50,11 @@ export const NavBar = () => {
       >
         <Box
           fontWeight="bold"
-          textTransform="uppercase"
           fontSize={{ base: '0.6rem', lg: 'xs' }}
           color="brand.500"
           mt={-2}
         >
-          Examples
+          <IndeedLogo />
         </Box>
       </Flex>
 

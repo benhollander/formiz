@@ -7,7 +7,10 @@ import {
 import theme from './theme';
 import { NavBar } from './layout/NavBar';
 import { Wizard } from './pages/Wizard';
-import { JobWizard } from './pages/JobWizard';
+import { JobPosting } from './pages/JobPosting';
+import { ApplyNow } from './pages/ApplyNow';
+import { Billing } from './pages/Billing';
+import { ResumeUpload } from './pages/ResumeUpload';
 
 function App() {
   return (
@@ -21,8 +24,17 @@ function App() {
               <Route path="/wizard" exact>
                 <Wizard />
               </Route>
-              <Route path="/job-wizard" exact>
-                <JobWizard />
+              <Route path="/job-posting" exact>
+                <JobPosting />
+              </Route>
+              <Route path="/apply-now" exact>
+                <ApplyNow />
+              </Route>
+              <Route path="/billing" exact>
+                <Billing />
+              </Route>
+              <Route path="/resume" exact>
+                <ResumeUpload />
               </Route>
             </Box>
           </Stack>

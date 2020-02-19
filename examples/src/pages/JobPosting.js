@@ -2,11 +2,12 @@ import React from 'react';
 import { Formiz, useForm, FormizStep } from '@formiz/core';
 import { isEmail } from '@formiz/validations';
 import { Button, Grid, Box } from '@chakra-ui/core';
+
 import { FieldInput } from '../components/Fields/FieldInput';
 import { PageHeader } from '../components/PageHeader';
 import { PageLayout } from '../layout/PageLayout';
 
-export const JobWizard = () => {
+export const JobPosting = () => {
   const form = useForm();
 
   const handleSubmit = (values) => {
@@ -34,8 +35,30 @@ export const JobWizard = () => {
           </PageHeader>
           <FormizStep name="step1">
             <FieldInput
-              name="name"
-              label="Name"
+              name="firstName"
+              label="First Name"
+              required="Required"
+            />
+            <FieldInput
+              name="lastName"
+              label="Last Name"
+              required="Required"
+            />
+            <FieldInput
+              name="email"
+              label="Email"
+              type="email"
+              required="Required"
+              validations={[
+                {
+                  rule: isEmail(),
+                  message: 'Not a valid email',
+                },
+              ]}
+            />
+            <FieldInput
+              name="phoneNumber"
+              label="Phone Number"
               required="Required"
             />
           </FormizStep>

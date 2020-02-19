@@ -8,6 +8,7 @@
     "@emotion/styled": "10.0.27",
     "@formiz/core": "^1.0.0-rc.9",
     "@formiz/validations": "^1.0.0-rc.6",
+    "@indeed/frontend-components-react-transpiled": "^12.3.0",
     "emotion-theming": "10.0.27",
     "prop-types": "15.7.2",
     "react": "16.12.0",
