@@ -1,3 +1,16 @@
+## TODO
+
+* Styling
+  * general Janus styling
+  * error states
+* Formatting rules?
+  * numbers (dates, currency)
+  * location using google places api
+* Validation rules?
+* inter-field dependencies
+
+-------------
+
 # Welcome to 🐜 Formiz
 React **forms with easy validation and multi steps**
 

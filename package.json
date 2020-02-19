@@ -19,6 +19,7 @@
     "examples:build": "yarn packages:build && lerna run build --parallel --scope examples"
   },
   "devDependencies": {
+    "@indeed/frontend-components-react-transpiled": "^12.2.0",
     "babel-eslint": "10.0.3",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.0.1",

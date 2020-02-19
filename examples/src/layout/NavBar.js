@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import {
   Flex,
-  Image,
   Box,
   Button,
   Drawer,
@@ -13,7 +12,6 @@ import {
   useDisclosure,
 } from '@chakra-ui/core';
 import { FaBars } from 'react-icons/fa';
-import logo from './logo.svg';
 import { Menu } from './Menu';
 import { useDarkTheme } from '../hooks/isDarkTheme';
 
@@ -48,11 +46,6 @@ export const NavBar = () => {
         align="flex-end"
         mb={{ lg: 6 }}
       >
-        <Image
-          src={logo}
-          alt="Formiz"
-          w={{ base: '8rem', lg: '10rem' }}
-        />
         <Box
           fontWeight="bold"
           textTransform="uppercase"

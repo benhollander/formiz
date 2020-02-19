@@ -19,41 +19,16 @@ export const Menu = ({ direction }) => {
     <Stack spacing="0" w="100%">
       <MenuItem
         direction={direction}
-        to="/"
-      >
-      AutoForm
-      </MenuItem>
-      <MenuItem
-        direction={direction}
         to="/wizard"
       >
-      Wizard
+        Wizard
       </MenuItem>
       <MenuItem
         direction={direction}
-        to="/repeater"
+        to="/job-wizard"
       >
-      Repeater
+        Job Wizard 🧙‍♂️
       </MenuItem>
-      <MenuItem
-        direction={direction}
-        to="/exotic-fields"
-      >
-      Exotic Fields
-      </MenuItem>
-      <MenuItem
-        direction={direction}
-        to="/lot-of-fields"
-      >
-      Lot of fields
-      </MenuItem>
-      <MenuItem
-        direction={direction}
-        to="/real-life-1"
-      >
-      Real life #1
-      </MenuItem>
-
       <MenuItem
         direction={direction}
         mt="6"
