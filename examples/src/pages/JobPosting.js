@@ -1,7 +1,8 @@
 import React from 'react';
 import { Formiz, useForm, FormizStep } from '@formiz/core';
 import { isEmail } from '@formiz/validations';
-import { Button, Grid, Box } from '@chakra-ui/core';
+import { Grid, Box } from '@chakra-ui/core';
+import Button from '@indeed/frontend-components-react-transpiled/dist/esm/Button';
 
 import { FieldInput } from '../components/Fields/FieldInput';
 import { PageHeader } from '../components/PageHeader';
@@ -64,8 +65,8 @@ export const JobPosting = () => {
           </FormizStep>
           <FormizStep name="step2">
             <FieldInput
-              name="email"
-              label="Email"
+              name="email2"
+              label="Email2"
               type="email"
               required="Required"
               validations={[
@@ -86,6 +87,7 @@ export const JobPosting = () => {
             <Grid templateColumns="1fr 2fr 1fr" alignItems="center">
               {!form.isFirstStep && (
                 <Button
+                  buttonType="secondary"
                   gridColumn="1"
                   onClick={form.prevStep}
                 >
@@ -101,6 +103,7 @@ export const JobPosting = () => {
                 Step {form.currentStep.index + 1} / {form.steps.length}
               </Box>
               <Button
+                buttonType="primary"
                 type="submit"
                 gridColumn="3"
                 variantColor="brand"

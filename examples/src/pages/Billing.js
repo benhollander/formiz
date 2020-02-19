@@ -31,7 +31,7 @@ export const Billing = () => {
           onSubmit={form.submitStep}
         >
           <PageHeader githubPath="JobWizard">
-            Job Wizard
+            Billing
           </PageHeader>
           <FormizStep name="step1">
             <FieldInput

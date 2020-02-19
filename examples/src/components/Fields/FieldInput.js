@@ -4,6 +4,7 @@ import {
   Input,
 } from '@chakra-ui/core';
 import { useField, fieldPropTypes, fieldDefaultProps } from '@formiz/core';
+import TextInput from '@indeed/frontend-components-react-transpiled/dist/esm/TextInput';
 import { FormGroup } from '../FormGroup';
 
 const propTypes = {
@@ -53,7 +54,7 @@ export const FieldInput = (props) => {
 
   return (
     <FormGroup {...formGroupProps}>
-      <Input
+      <TextInput
         key={resetKey}
         type={type || 'text'}
         id={id}
