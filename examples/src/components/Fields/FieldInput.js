@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import {
-  Input,
-} from '@chakra-ui/core';
+import { Box } from '@chakra-ui/core';
 import { useField, fieldPropTypes, fieldDefaultProps } from '@formiz/core';
 import TextInput from '@indeed/frontend-components-react-transpiled/dist/esm/TextInput';
-import { FormGroup } from '../FormGroup';
+
+// import { FormGroup } from '../FormGroup';
 
 const propTypes = {
   label: PropTypes.node,
@@ -36,37 +35,58 @@ export const FieldInput = (props) => {
     label, type, required, placeholder, helper, ...otherProps
   } = props;
   const [isTouched, setIsTouched] = useState(false);
-  const showError = !isValid && (isTouched || isSubmitted);
+  const hasError = !isValid && (isTouched || isSubmitted);
 
   useEffect(() => {
     setIsTouched(false);
   }, [resetKey]);
 
-  const formGroupProps = {
-    errorMessage,
-    helper,
-    id,
-    isRequired: !!required,
-    label,
-    showError,
-    ...otherProps,
-  };
-
+  // TODO: Something similar for the other form fields?
+  // TODO: Technically, the form fields should probably be in a different package
   return (
-    <FormGroup {...formGroupProps}>
+    <Box mb="3">
       <TextInput
-        key={resetKey}
-        type={type || 'text'}
+        errorText={hasError && errorMessage}
+        hasError={hasError}
+        helpText={helper}
         id={id}
-        value={value || ''}
-        onChange={(e) => setValue(e.target.value)}
+        isRequired={isTouched && !!required}
+        label={label}
+        mb="3"
+        name={id}
         onBlur={() => setIsTouched(true)}
-        aria-invalid={showError}
-        aria-describedby={!isValid ? `${id}-error` : null}
-        placeholder={placeholder}
+        onChange={(e) => setValue(e.target.value)}
+        type={type || 'text'}
+        value={value}
       />
-    </FormGroup>
+    </Box>
   );
+
+  // const formGroupProps = {
+  //   errorMessage, // use TextInput errorText instead
+  //   helper,
+  //   id,
+  //   isRequired: !!required,
+  //   label,
+  //   showError,
+  //   ...otherProps,
+  // };
+
+  // return (
+  //   <FormGroup {...formGroupProps}>
+  //     <Input
+  //       key={resetKey}
+  //       type={type || 'text'}
+  //       id={id}
+  //       value={value || ''}
+  //       onChange={(e) => setValue(e.target.value)}
+  //       onBlur={() => setIsTouched(true)}
+  //       aria-invalid={showError}
+  //       aria-describedby={!isValid ? `${id}-error` : null}
+  //       placeholder={placeholder}
+  //     />
+  //   </FormGroup>
+  // );
 };
 
 FieldInput.propTypes = propTypes;

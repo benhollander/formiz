@@ -36,6 +36,7 @@ export const PageHeader = ({ children, onReset, githubPath }) => {
           Reset form
         </Button>
       </Heading>
+      {/* TODO: Feasible to put a link to the repo here?
       {!!githubPath && (
         <Link
           isExternal
@@ -45,7 +46,7 @@ export const PageHeader = ({ children, onReset, githubPath }) => {
           View code on GitHub
           <Icon name="external-link" ml="1" mb="1" />
         </Link>
-      )}
+      )} */}
     </Box>
   );
 };

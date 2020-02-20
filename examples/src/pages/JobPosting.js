@@ -32,7 +32,7 @@ export const JobPosting = () => {
           onSubmit={form.submitStep}
         >
           <PageHeader githubPath="JobWizard">
-            Job Wizard
+            Post a job
           </PageHeader>
           <FormizStep name="step1">
             <FieldInput

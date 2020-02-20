@@ -1,13 +1,14 @@
 ## TODO
 
 * Styling
-  * general Janus styling
-  * error states
+  * ~~general Janus styling~~
 * Formatting rules?
   * numbers (dates, currency)
   * location using google places api
 * Validation rules?
-* inter-field dependencies
+* Error components/styles
+* inter-field dependencies?
+* deploy to gitlab pages or something?
 
 -------------
 
@@ -123,3 +124,4 @@ So instead you can go in each packages folders and run tests from here.
 cd packages/core
 yarn test:dev
 ```
+
